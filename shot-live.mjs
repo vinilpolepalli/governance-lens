@@ -1,0 +1,17 @@
+import { chromium } from 'playwright';
+const b = await chromium.launch();
+const d = await b.newPage({ viewport: { width: 1280, height: 900 } });
+await d.goto('https://governance-lens-eight.vercel.app/', { waitUntil: 'networkidle' });
+await d.screenshot({ path: '/tmp/live-gl-d.png' });
+await d.goto('https://governance-lens-eight.vercel.app/company/tsla', { waitUntil: 'networkidle' });
+await d.screenshot({ path: '/tmp/live-gl-tsla.png' });
+const m = await b.newPage({ viewport: { width: 390, height: 844 } });
+await m.goto('https://governance-lens-eight.vercel.app/', { waitUntil: 'networkidle' });
+await m.screenshot({ path: '/tmp/live-gl-m.png' });
+const d2 = await b.newPage({ viewport: { width: 1280, height: 900 } });
+await d2.goto('https://context-pack-pi.vercel.app/', { waitUntil: 'networkidle' });
+await d2.screenshot({ path: '/tmp/live-fd-d.png' });
+const m2 = await b.newPage({ viewport: { width: 390, height: 844 } });
+await m2.goto('https://context-pack-pi.vercel.app/', { waitUntil: 'networkidle' });
+await m2.screenshot({ path: '/tmp/live-fd-m.png' });
+await b.close(); console.log('done');
