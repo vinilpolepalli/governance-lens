@@ -1,0 +1,36 @@
+{
+  "name": "governance-lens",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Analyze real SEC proxy ballots against your own voting policy.",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "typecheck": "tsc --noEmit",
+    "fetch": "node scripts/fetch-proxies.mjs",
+    "test:engine": "tsx scripts/engine-check.mts"
+  },
+  "dependencies": {
+    "better-sqlite3": "^13.2.0",
+    "drizzle-orm": "^0.45.4",
+    "next": "^14.2.15",
+    "postgres": "^4.1.1",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@types/better-sqlite3": "^9.6.0",
+    "@types/node": "^20.14.0",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "autoprefixer": "^10.4.20",
+    "drizzle-kit": "^0.31.11",
+    "playwright": "^1.49.0",
+    "postcss": "^8.4.47",
+    "serve": "^14.2.8",
+    "tailwindcss": "^3.4.13",
+    "tsx": "^4.23.15",
+    "typescript": "^5.5.4"
+  }
+}

@@ -1,0 +1,67 @@
+I'm blocked on the first step of the spec, and I need one thing from you before I can continue.
+
+**What I found:** the SEC's metadata API (`data.sec.gov/submissions`) works. It gave me the latest DEF 14A filings:
+- Tesla: filed 2026-10-19
+- Apple: filed 2026-01-08
+- JPMorgan: filed 2026-04-06
+
+The filing documents on `www.sec.gov/Archives/...` return an "Undeclared Automated Tool" block page. I tried two generic user agents and both were rejected. The SEC wants a User-Agent with real company and contact details, such as `Name email@domain`.
+
+**Why I'm stopping:** I won't make up a contact email or put your name in a header sent to the SEC without your say-so. Faking the header would be misrepresenting who is making the requests. The spec also rules out inventing any figures, so I can't build the app without the real filing text.
+
+**What I need:** a contact string for the User-Agent, for example `Vinil Polepalli you@example.com`. Or tell me to use a different identifier. The fetch script will read it from an `SEC_USER_AGENT` env var, so it won't be committed to the repo.
+
+Once I have it, I'll continue with these steps:
+1. Download the three filings.
+2. Extract the ballot items and facts.
+3. Build the Next.js app, the policy engine, the README and the footer.
+4. Run `npm run build` until it passes.
+Governance Lens is built and `npm run build` passes. I didn't open the pages in a browser, but the static export includes the footer on every page. Nothing was deployed or committed to git.
+
+**Real data.** The fetch script pulled the latest DEF 14A for each company from SEC EDGAR:
+
+| Company | Filed | Ballot items |
+|---|---|---|
+| Tesla | 2026-10-19 | 5 |
+| Apple | 2026-01-08 | 12 |
+| JPMorgan | 2026-04-06 | 17 |
+
+- **Extraction:** the script (`scripts/fetch-proxies.mjs`) pulls director bios, the CEO pay table and TSR, last year's say-on-pay support, auditor tenure and fees, Apple's director stock plan, and the shareholder proposals.
+- **Provenance:** each company file in `app/data/` carries its EDGAR `sourceUrl`, and the script checks every evidence quote against the filing text.
+- **User agent:** it reads `SEC_USER_AGENT` from the environment, so your contact details aren't in the repo or the JSON.
+
+**App.** The three pages are the company list, a company detail page with the policy switcher and editor, and a policy-divergence page. The rule engine is deterministic TypeScript with two presets, Long-term value focus and Governance-first. Editing a rule saves a Custom policy in the browser.
+
+**Result.** The presets disagree on 18 of the 34 items. Examples:
+- **Tesla auditor:** FOR under Long-term, AGAINST under Governance-first (PwC has audited since 2005, 21 years against a 20-year limit).
+- **Apple auditor:** AGAINST under Governance-first only (non-audit fees are 21.3% of the total against a 15% limit).
+- **JPMorgan's Dimon:** AGAINST under Governance-first only (combined Chairman/CEO).
+
+**Gaps** (the README and the UI both say so):
+- **Tesla board seats:** other public board seats aren't extractable from Tesla's free-text bios, so the overboarding rule is skipped for its nominees.
+- **Tesla CEO pay growth:** the prior-year pay figure is "-" in the pay table, so the pay-growth-versus-TSR rule is skipped.
+- **Tesla's $158.4B pay figure:** this is the grant-date accounting value of the 2025 CEO award, not cash paid.
+- **Proposal categories:** assigned by title keywords, which is a simplification.
+- **Evidence quotes:** a few are marked "values read from the cited table" because they assemble numbers from table rows rather than quoting a sentence.
+
+I wrote the data extraction and the policy presets quickly. Please skim `app/data/*.json` and the preset thresholds in `lib/policies.ts` before showing them to Pennant.
+
+To re-run the fetch: `SEC_USER_AGENT="Name email" npm run fetch`.
+Both refinements are done, and `npm run build` is green with static export intact. I checked layouts at 1440, 1024, 768 and 390 on the home, company and compare pages, and none scroll horizontally. I didn't run `npm run test:engine` — `scripts/engine-check.mts`, which that script points to, isn't in the repo.
+
+**1. Truthful incompleteness**
+- When no rule triggered or passed, the decision is now `REVIEW`, not FOR. This applies when enabled rules were skipped for missing facts, and also when no rule applies to the item at all. `REVIEW` is a new type in `lib/types.ts`, and the policy-stance `Vote` type is unchanged.
+- The WHY text reads: "No enabled rule could evaluate this item - N rule(s) skipped for missing facts. Default board-alignment FOR not applied." The first skip reason is appended after it, so the existing factual explanation is kept.
+- FOR still appears when at least one rule evaluated and passed. If other rules were skipped, a note says how many.
+- The REVIEW badge is amber with a dashed outline and a tooltip. Tallies on the home and company pages gain a REVIEW count.
+- The compare page now splits the divergence count. It shows how many are real policy disagreements and how many are cases where one side is REVIEW. Tesla's three items now show REVIEW under the long-term policy.
+
+**2. Design pass**
+- **Design tokens:** a `.shell` container gives the header, main content and footer the same left and right edges. Radii are 8px for controls, 12px for cards and pill for badges. Type uses a defined eyebrow, label and heading scale. Borders are quieter, and navy is limited to eyebrows, links, focus and hover. The gradient headline text and the glow shadows are gone.
+- **Hover effects:** cards and buttons lift 2px, and links get an underline that draws in.
+- **Hero animation:** one staggered fade-up on load, switched off under `prefers-reduced-motion`.
+- **Tally rows:** the home-page cards had badges and counts wrapping apart at narrow widths. Each badge and count is now one unit.
+
+`.btn` is defined in `globals.css` but nothing uses it yet. There is no explicit button element to apply it to, so the hover lift is on the cards and the link underline only.
+
+I left a local `serve` process running on port 8901 from the screenshots.

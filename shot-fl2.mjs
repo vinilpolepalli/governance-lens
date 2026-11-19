@@ -1,0 +1,17 @@
+import { chromium } from 'playwright';
+const b = await chromium.launch();
+const d = await b.newPage({ viewport: { width: 1280, height: 900 } });
+await d.goto('http://127.0.0.1:8908/', { waitUntil: 'networkidle' });
+await d.click('a:has-text("Patient A")');
+await d.waitForTimeout(400);
+await d.screenshot({ path: '/tmp/fl2-d-selected.png' });
+await d.evaluate(() => window.scrollTo(0, document.body.scrollHeight));
+await d.waitForTimeout(300);
+await d.screenshot({ path: '/tmp/fl2-d-audit.png' });
+const m = await b.newPage({ viewport: { width: 390, height: 844 } });
+await m.goto('http://127.0.0.1:8908/', { waitUntil: 'networkidle' });
+await m.screenshot({ path: '/tmp/fl2-m.png' });
+await m.click('a:has-text("Patient A")');
+await m.waitForTimeout(400);
+await m.screenshot({ path: '/tmp/fl2-m-selected.png' });
+await b.close(); console.log('done');

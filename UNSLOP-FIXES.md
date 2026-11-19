@@ -1,0 +1,11 @@
+# De-slop remediation (from unslop-ui scanner audit + tells catalog)
+
+Apply these specific, deliberate changes. Keep all function, copy, disclosures, hardening, and the light theme. Build + typecheck must pass. Then re-run: python3 ~/unslop/devibe_scan.py . and iterate until high-severity findings are 0 or explicitly justified with a code comment containing unslop-ignore plus the reason.
+
+1. **Replace the indigo brand accent (inherited default, nobody chose it).** New brand color: EDGAR navy #16324f (hover #0f2439, focus ring rgba(22,50,79,0.15)). Rationale (state it in a comment in tailwind.config.ts): the tool analyzes SEC EDGAR filings; navy is the source institution's color family and sits outside the violet/indigo AI-default band. Replace every indigo/violet class and the accent hex everywhere (Chrome nav hover, logo mark, links, active policy ring, focus rings, compare/audit links, globals.css link rule).
+2. **Font: drop the Inter declaration.** Use an explicit system stack (ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif) with a config comment: deliberate choice for a filings-analysis tool - matches the plain presentation of the source material, zero font loading. Keep tabular-nums for figures.
+3. **Amber "tasteful default" pattern-match:** the three amber-50 fills are semantic warnings, not decoration - keep the meaning, change the treatment so it doesn't read as cream-default: white background, 1px amber-200 border, amber-800 text. No amber-50/amber-100 fills.
+4. **Home page layout tell:** remove the three numbered explainer cards at the bottom ("1 · Real filings / 2 · Your policy / 3 · Reasoning, not a black box"). Replace with a compact flat block: a small-caps "How it works" label and three hairline-separated rows (short statement each, same facts, no cards, no grid). Left-aligned, quiet.
+5. **Radius discipline:** status pills keep the full-round shape (they are status chips, semantic). Everything else: buttons radius 8px, cards 10px, inputs 8px. Hunt for any other rounded-full/999px that is not a status pill and square it down.
+6. Check for emoji-as-icons and gradient text anywhere; remove if found (none expected).
+7. Verify visually at 1280 and 390 on home, company/MSFT, compare, audit: nothing broken, contrast fine, mobile unchanged. Do not deploy or push.

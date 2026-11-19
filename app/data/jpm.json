@@ -1,0 +1,597 @@
+{
+  "ticker": "JPM",
+  "name": "JPMorgan Chase & Co.",
+  "cik": "0000019617",
+  "sector": "Financials",
+  "exchange": "NYSE",
+  "filing": {
+    "form": "DEF 14A",
+    "filingDate": "2026-04-06",
+    "accession": "0000019617-26-000096",
+    "sourceUrl": "https://www.sec.gov/Archives/edgar/data/19617/000001961726000096/jpm-20260402.htm",
+    "indexUrl": "https://www.sec.gov/Archives/edgar/data/19617/000001961726000096/0000019617-26-000096-index.htm"
+  },
+  "meeting": {
+    "year": 2026,
+    "date": null,
+    "fiscalYear": 2025
+  },
+  "generatedBy": "scripts/fetch-proxies.mjs",
+  "items": [
+    {
+      "id": "dir-stephen-b-burke",
+      "type": "director",
+      "title": "Elect Stephen B. Burke",
+      "subtitle": "Lead Independent Director",
+      "boardRec": "FOR",
+      "facts": {
+        "name": "Stephen B. Burke",
+        "age": 67,
+        "directorSince": 2004,
+        "tenureYears": 22,
+        "committees": [
+          "Compensation & Management Development (Chair)",
+          "Corporate Governance & Nominating"
+        ],
+        "isCeo": false,
+        "isChair": false,
+        "independent": true,
+        "combinedChairCeo": false,
+        "otherPublicBoards": 1,
+        "classifiedBoard": false,
+        "termExpires": "2027 (one-year term)"
+      },
+      "evidence": [
+        {
+          "label": "Nominee table",
+          "quote": "Stephen B. Burke Lead Independent Director Director since 2004 67 |",
+          "truncated": false
+        },
+        {
+          "label": "Independence",
+          "quote": "All are independent other than our CEO",
+          "truncated": false
+        }
+      ]
+    },
+    {
+      "id": "dir-linda-b-bammann",
+      "type": "director",
+      "title": "Elect Linda B. Bammann",
+      "subtitle": "Independent director",
+      "boardRec": "FOR",
+      "facts": {
+        "name": "Linda B. Bammann",
+        "age": 70,
+        "directorSince": 2013,
+        "tenureYears": 13,
+        "committees": [
+          "Risk (Chair)",
+          "Compensation & Management Development"
+        ],
+        "isCeo": false,
+        "isChair": false,
+        "independent": true,
+        "combinedChairCeo": false,
+        "otherPublicBoards": 0,
+        "classifiedBoard": false,
+        "termExpires": "2027 (one-year term)"
+      },
+      "evidence": [
+        {
+          "label": "Nominee table",
+          "quote": "Linda B. Bammann Director since 2013 70 |",
+          "truncated": false
+        },
+        {
+          "label": "Independence",
+          "quote": "All are independent other than our CEO",
+          "truncated": false
+        }
+      ]
+    },
+    {
+      "id": "dir-michele-g-buck",
+      "type": "director",
+      "title": "Elect Michele G. Buck",
+      "subtitle": "Independent director",
+      "boardRec": "FOR",
+      "facts": {
+        "name": "Michele G. Buck",
+        "age": 64,
+        "directorSince": 2025,
+        "tenureYears": 1,
+        "committees": [
+          "Audit",
+          "Corporate Governance & Nominating"
+        ],
+        "isCeo": false,
+        "isChair": false,
+        "independent": true,
+        "combinedChairCeo": false,
+        "otherPublicBoards": 0,
+        "classifiedBoard": false,
+        "termExpires": "2027 (one-year term)"
+      },
+      "evidence": [
+        {
+          "label": "Nominee table",
+          "quote": "Michele G. Buck Director since 2025 64 |",
+          "truncated": false
+        },
+        {
+          "label": "Independence",
+          "quote": "All are independent other than our CEO",
+          "truncated": false
+        }
+      ]
+    },
+    {
+      "id": "dir-alicia-boler-davis",
+      "type": "director",
+      "title": "Elect Alicia Boler Davis",
+      "subtitle": "Independent director",
+      "boardRec": "FOR",
+      "facts": {
+        "name": "Alicia Boler Davis",
+        "age": 57,
+        "directorSince": 2023,
+        "tenureYears": 3,
+        "committees": [
+          "Public Responsibility",
+          "Risk"
+        ],
+        "isCeo": false,
+        "isChair": false,
+        "independent": true,
+        "combinedChairCeo": false,
+        "otherPublicBoards": 0,
+        "classifiedBoard": false,
+        "termExpires": "2027 (one-year term)"
+      },
+      "evidence": [
+        {
+          "label": "Nominee table",
+          "quote": "Alicia Boler Davis Director since 2023 57 |",
+          "truncated": false
+        },
+        {
+          "label": "Independence",
+          "quote": "All are independent other than our CEO",
+          "truncated": false
+        }
+      ]
+    },
+    {
+      "id": "dir-james-dimon",
+      "type": "director",
+      "title": "Elect James Dimon",
+      "subtitle": "Chairman & Chief Executive Officer",
+      "boardRec": "FOR",
+      "facts": {
+        "name": "James Dimon",
+        "age": 70,
+        "directorSince": 2004,
+        "tenureYears": 22,
+        "committees": [],
+        "isCeo": true,
+        "isChair": true,
+        "independent": false,
+        "combinedChairCeo": true,
+        "otherPublicBoards": 0,
+        "classifiedBoard": false,
+        "termExpires": "2027 (one-year term)"
+      },
+      "evidence": [
+        {
+          "label": "Nominee table",
+          "quote": "James Dimon Director since 2004 70 |",
+          "truncated": false
+        },
+        {
+          "label": "Independence",
+          "quote": "All are independent other than our CEO",
+          "truncated": false
+        }
+      ]
+    },
+    {
+      "id": "dir-alex-gorsky",
+      "type": "director",
+      "title": "Elect Alex Gorsky",
+      "subtitle": "Independent director",
+      "boardRec": "FOR",
+      "facts": {
+        "name": "Alex Gorsky",
+        "age": 65,
+        "directorSince": 2022,
+        "tenureYears": 4,
+        "committees": [
+          "Audit",
+          "Corporate Governance & Nominating"
+        ],
+        "isCeo": false,
+        "isChair": false,
+        "independent": true,
+        "combinedChairCeo": false,
+        "otherPublicBoards": 2,
+        "classifiedBoard": false,
+        "termExpires": "2027 (one-year term)"
+      },
+      "evidence": [
+        {
+          "label": "Nominee table",
+          "quote": "Alex Gorsky Director since 2022 65 |",
+          "truncated": false
+        },
+        {
+          "label": "Independence",
+          "quote": "All are independent other than our CEO",
+          "truncated": false
+        }
+      ]
+    },
+    {
+      "id": "dir-mellody-hobson",
+      "type": "director",
+      "title": "Elect Mellody Hobson",
+      "subtitle": "Independent director",
+      "boardRec": "FOR",
+      "facts": {
+        "name": "Mellody Hobson",
+        "age": 57,
+        "directorSince": 2018,
+        "tenureYears": 8,
+        "committees": [
+          "Public Responsibility (Chair)",
+          "Risk"
+        ],
+        "isCeo": false,
+        "isChair": false,
+        "independent": true,
+        "combinedChairCeo": false,
+        "otherPublicBoards": 0,
+        "classifiedBoard": false,
+        "termExpires": "2027 (one-year term)"
+      },
+      "evidence": [
+        {
+          "label": "Nominee table",
+          "quote": "Mellody Hobson Director since 2018 57 |",
+          "truncated": false
+        },
+        {
+          "label": "Independence",
+          "quote": "All are independent other than our CEO",
+          "truncated": false
+        }
+      ]
+    },
+    {
+      "id": "dir-phebe-n-novakovic",
+      "type": "director",
+      "title": "Elect Phebe N. Novakovic",
+      "subtitle": "Independent director",
+      "boardRec": "FOR",
+      "facts": {
+        "name": "Phebe N. Novakovic",
+        "age": 68,
+        "directorSince": 2020,
+        "tenureYears": 6,
+        "committees": [
+          "Audit",
+          "Public Responsibility"
+        ],
+        "isCeo": false,
+        "isChair": false,
+        "independent": true,
+        "combinedChairCeo": false,
+        "otherPublicBoards": 1,
+        "classifiedBoard": false,
+        "termExpires": "2027 (one-year term)"
+      },
+      "evidence": [
+        {
+          "label": "Nominee table",
+          "quote": "Phebe N. Novakovic Director since 2020 68 |",
+          "truncated": false
+        },
+        {
+          "label": "Independence",
+          "quote": "All are independent other than our CEO",
+          "truncated": false
+        }
+      ]
+    },
+    {
+      "id": "dir-virginia-m-rometty",
+      "type": "director",
+      "title": "Elect Virginia M. Rometty",
+      "subtitle": "Independent director",
+      "boardRec": "FOR",
+      "facts": {
+        "name": "Virginia M. Rometty",
+        "age": 68,
+        "directorSince": 2020,
+        "tenureYears": 6,
+        "committees": [
+          "Corporate Governance & Nominating (Chair)",
+          "Compensation & Management Development"
+        ],
+        "isCeo": false,
+        "isChair": false,
+        "independent": true,
+        "combinedChairCeo": false,
+        "otherPublicBoards": 0,
+        "classifiedBoard": false,
+        "termExpires": "2027 (one-year term)"
+      },
+      "evidence": [
+        {
+          "label": "Nominee table",
+          "quote": "Virginia M. Rometty Director since 2020 68 |",
+          "truncated": false
+        },
+        {
+          "label": "Independence",
+          "quote": "All are independent other than our CEO",
+          "truncated": false
+        }
+      ]
+    },
+    {
+      "id": "dir-brad-d-smith",
+      "type": "director",
+      "title": "Elect Brad D. Smith",
+      "subtitle": "Independent director",
+      "boardRec": "FOR",
+      "facts": {
+        "name": "Brad D. Smith",
+        "age": 62,
+        "directorSince": 2025,
+        "tenureYears": 1,
+        "committees": [
+          "Public Responsibility",
+          "Risk"
+        ],
+        "isCeo": false,
+        "isChair": false,
+        "independent": true,
+        "combinedChairCeo": false,
+        "otherPublicBoards": 1,
+        "classifiedBoard": false,
+        "termExpires": "2027 (one-year term)"
+      },
+      "evidence": [
+        {
+          "label": "Nominee table",
+          "quote": "Brad D. Smith Director since 2025 62 |",
+          "truncated": false
+        },
+        {
+          "label": "Independence",
+          "quote": "All are independent other than our CEO",
+          "truncated": false
+        }
+      ]
+    },
+    {
+      "id": "dir-mark-a-weinberger",
+      "type": "director",
+      "title": "Elect Mark A. Weinberger",
+      "subtitle": "Independent director",
+      "boardRec": "FOR",
+      "facts": {
+        "name": "Mark A. Weinberger",
+        "age": 64,
+        "directorSince": 2024,
+        "tenureYears": 2,
+        "committees": [
+          "Audit (Chair)"
+        ],
+        "isCeo": false,
+        "isChair": false,
+        "independent": true,
+        "combinedChairCeo": false,
+        "otherPublicBoards": 2,
+        "classifiedBoard": false,
+        "termExpires": "2027 (one-year term)"
+      },
+      "evidence": [
+        {
+          "label": "Nominee table",
+          "quote": "Mark A. Weinberger Director since 2024 64 |",
+          "truncated": false
+        },
+        {
+          "label": "Independence",
+          "quote": "All are independent other than our CEO",
+          "truncated": false
+        }
+      ]
+    },
+    {
+      "id": "say-on-pay",
+      "type": "say-on-pay",
+      "title": "Advisory resolution to approve executive compensation",
+      "subtitle": "Say-on-pay (non-binding)",
+      "boardRec": "FOR",
+      "facts": {
+        "ceoName": "James Dimon",
+        "ceoPayLatest": 40632724,
+        "ceoPayPrior": 37683462,
+        "ceoPayGrowthPct": 7.8,
+        "ceoCapLatestUsdM": 246.8,
+        "tsrIndexLatest": 289.18,
+        "tsrIndexPrior": 210.58,
+        "tsrOneYearPct": 37.3,
+        "priorYearSupportPct": 91,
+        "fiscalYear": 2025
+      },
+      "evidence": [
+        {
+          "label": "Summary Compensation Table (CEO total)",
+          "quote": "James Dimon, Chairman and CEO: 2025 total 40,632,724; 2024 total 37,683,462",
+          "derived": true
+        },
+        {
+          "label": "Pay versus Performance (TSR: value of $100)",
+          "quote": "Company TSR 2025: 289.18; 2024: 210.58",
+          "derived": true
+        },
+        {
+          "label": "2025 say-on-pay result",
+          "quote": "Our 2025 Say on Pay proposal received 91% approval",
+          "truncated": false
+        }
+      ]
+    },
+    {
+      "id": "auditor",
+      "type": "auditor",
+      "title": "Ratify PricewaterhouseCoopers LLP as auditor for 2026",
+      "subtitle": "Auditor ratification",
+      "boardRec": "FOR",
+      "facts": {
+        "firm": "PricewaterhouseCoopers LLP",
+        "auditorSince": 1965,
+        "tenureYears": 61,
+        "auditFees": 91,
+        "auditRelatedFees": 38.1,
+        "taxFees": 5.9,
+        "otherFees": 0,
+        "totalFees": 135,
+        "nonAuditSharePct": 4.4,
+        "feeUnit": "USD millions",
+        "feeYear": 2025
+      },
+      "evidence": [
+        {
+          "label": "Auditor tenure",
+          "quote": "PwC and its predecessors have acted as our independent registered public accounting firm since 1965.",
+          "truncated": false
+        },
+        {
+          "label": "Fees table (2025; $ millions)",
+          "quote": "Audit $91; Audit-related 38.1; Tax 5.9; Total $135",
+          "derived": true
+        }
+      ]
+    },
+    {
+      "id": "sh-4",
+      "type": "shareholder-proposal",
+      "title": "Shareholder Proposal 4: Report on congruence of security, resiliency, and climate initiatives",
+      "subtitle": "Submitted by National Legal and Policy Center",
+      "boardRec": "AGAINST",
+      "facts": {
+        "proposalNumber": 4,
+        "proposalTitle": "Report on congruence of security, resiliency, and climate initiatives",
+        "proponent": "National Legal and Policy Center",
+        "category": "sustainability-report",
+        "categoryLabel": "Sustainability / climate reporting",
+        "requestType": "report",
+        "resolved": "Shareholders request that the Board of Directors publish a report, prepared at reasonable cost and omitting proprietary or legally privileged information, describing the Board's oversight and evaluation for how the Company's Security and Resiliency Initiative is congruent with existing climate-related commitments."
+      },
+      "evidence": [
+        {
+          "label": "Proponent",
+          "quote": "National Legal and Policy Center has advised us that it intends to introduce the following resolution",
+          "truncated": false
+        },
+        {
+          "label": "Board recommendation",
+          "quote": "The Board of Directors recommends that shareholders vote AGAINST this proposal",
+          "truncated": false
+        }
+      ]
+    },
+    {
+      "id": "sh-5",
+      "type": "shareholder-proposal",
+      "title": "Shareholder Proposal 5: Independent board chairman",
+      "subtitle": "Submitted by John Chevedden",
+      "boardRec": "AGAINST",
+      "facts": {
+        "proposalNumber": 5,
+        "proposalTitle": "Independent board chairman",
+        "proponent": "John Chevedden",
+        "category": "independent-chair",
+        "categoryLabel": "Independent board chair",
+        "requestType": "policy change",
+        "resolved": "Shareholders request that the Board of Directors adopt an enduring policy, and amend the governing documents as necessary including the Corporate Governance Guidelines in order that 2 separate people hold the office of the Chairman and the office of the CEO as soon as possible.",
+        "hasLeadIndependentDirector": true
+      },
+      "evidence": [
+        {
+          "label": "Proponent",
+          "quote": "John Chevedden has advised us that he intends to introduce the following resolution",
+          "truncated": false
+        },
+        {
+          "label": "Board recommendation",
+          "quote": "The Board of Directors recommends that shareholders vote AGAINST this proposal",
+          "truncated": false
+        }
+      ]
+    },
+    {
+      "id": "sh-6",
+      "type": "shareholder-proposal",
+      "title": "Shareholder Proposal 6: Lobbying alignment",
+      "subtitle": "Submitted by The Missionary Oblates of Mary Immaculate",
+      "boardRec": "AGAINST",
+      "facts": {
+        "proposalNumber": 6,
+        "proposalTitle": "Lobbying alignment",
+        "proponent": "The Missionary Oblates of Mary Immaculate",
+        "category": "political-lobbying",
+        "categoryLabel": "Political spending & lobbying",
+        "requestType": "report",
+        "resolved": "Shareholders request the Board of Directors take steps to analyze and report to shareholders (at reasonable cost and omitting confidential information) on the alignment of JPMorgan Chase's lobbying and public policy advocacy with its stated public policy positions."
+      },
+      "evidence": [
+        {
+          "label": "Proponent",
+          "quote": "The Missionary Oblates of Mary Immaculate has advised us that it intends to introduce the following resolution",
+          "truncated": false
+        },
+        {
+          "label": "Board recommendation",
+          "quote": "The Board of Directors recommends that shareholders vote AGAINST this proposal",
+          "truncated": false
+        }
+      ]
+    },
+    {
+      "id": "sh-7",
+      "type": "shareholder-proposal",
+      "title": "Shareholder Proposal 7: Sustainability ROI report",
+      "subtitle": "Submitted by The National Center for Public Policy Research",
+      "boardRec": "AGAINST",
+      "facts": {
+        "proposalNumber": 7,
+        "proposalTitle": "Sustainability ROI report",
+        "proponent": "The National Center for Public Policy Research",
+        "category": "sustainability-report",
+        "categoryLabel": "Sustainability / climate reporting",
+        "requestType": "report",
+        "resolved": "Shareholders request the Board of Directors issue a report by the next annual meeting, at reasonable cost and omitting proprietary information, assessing whether and to what extent the Company's sustainability investments referenced in its 2024 Sustainability Report were authorized based on positive Net Present Value (NPV) analysis and are maintained based on quantifiable Return on Investment (ROI) metrics."
+      },
+      "evidence": [
+        {
+          "label": "Proponent",
+          "quote": "The National Center for Public Policy Research has advised us that it intends to introduce the following resolution",
+          "truncated": false
+        },
+        {
+          "label": "Board recommendation",
+          "quote": "The Board of Directors recommends that shareholders vote AGAINST this proposal",
+          "truncated": false
+        }
+      ]
+    }
+  ],
+  "fetchedAt": "2026-11-17T00:57:33Z",
+  "fetchedAtNote": "Recorded from the committed snapshot file timestamp (scripts/fetch-proxies.mjs run); not re-fetched at seed time."
+}

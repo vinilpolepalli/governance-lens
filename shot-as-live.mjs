@@ -1,0 +1,10 @@
+import { chromium } from 'playwright';
+const b = await chromium.launch();
+const d = await b.newPage({ viewport: { width: 1280, height: 900 } });
+await d.goto('https://ops-desk-vinilpolepallis-projects.vercel.app', { waitUntil: 'networkidle' });
+await d.getByText('Shipment #4471 delayed 3 days').first().click();
+await d.waitForTimeout(300);
+await d.getByRole('button', { name: 'Approve', exact: true }).first().click();
+await d.waitForTimeout(400);
+await d.screenshot({ path: '/tmp/asl-d.png', fullPage: true });
+await b.close(); console.log('done');

@@ -1,0 +1,81 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*
+ * Light product UI (see STYLE.md)
+ *  ground #fafafa · surfaces #fff · ink #18181b / #71717a / #a1a1aa · hairline #e8e8e8 / #f1f1f0
+ *  navy accent only for logo, active affordances, focus rings and key links
+ */
+html {
+  color-scheme: light;
+}
+
+body {
+  @apply bg-page text-[14px] leading-relaxed text-ink antialiased;
+  font-variant-numeric: tabular-nums;
+}
+
+h1, h2, h3 {
+  @apply text-ink;
+}
+
+h1 {
+  font-size: 26px;
+  line-height: 1.2;
+  font-weight: 650;
+  letter-spacing: -0.02em;
+}
+
+@layer components {
+  .shell {
+    @apply mx-auto w-full max-w-6xl px-6;
+  }
+  .card {
+    @apply rounded-[10px] border border-line bg-white;
+  }
+  .card-interactive {
+    @apply transition-colors duration-150 hover:border-ink-faint;
+  }
+  .inset {
+    @apply rounded-lg bg-page border border-line-soft;
+  }
+  .eyebrow {
+    @apply text-[11px] font-medium uppercase tracking-[0.08em] text-ink-muted;
+  }
+  .section-label {
+    @apply text-xs font-medium uppercase tracking-[0.08em] text-ink-muted;
+  }
+  /* unslop-ignore: status pills are semantic chips and intentionally full-round */
+  .badge {
+    @apply inline-flex items-center rounded-full border font-semibold tracking-wide; /* unslop-ignore: status pill */
+  }
+  .link {
+    @apply text-accent underline decoration-accent/30 underline-offset-2 transition-colors hover:decoration-accent;
+  }
+  .btn {
+    @apply inline-flex items-center gap-1.5 rounded-lg border border-line bg-white px-3 py-1.5 text-xs font-medium text-ink transition-colors hover:bg-page;
+  }
+}
+
+:focus-visible {
+  @apply outline-none ring-[3px] ring-accent/15;
+}
+
+input[type="number"],
+input[type="text"],
+input:not([type]),
+textarea,
+select {
+  @apply rounded-lg border border-line bg-white px-2 py-1 text-sm text-ink outline-none transition-colors hover:border-ink-faint focus:border-accent focus:ring-[3px] focus:ring-accent/15;
+}
+input#ticker {
+  @apply px-3 py-1.5;
+}
+button:focus-visible, a:focus-visible, summary:focus-visible {
+  @apply ring-[3px] ring-accent/25;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { transition-duration: 0.01ms !important; }
+}

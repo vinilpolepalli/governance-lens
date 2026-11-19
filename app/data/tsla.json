@@ -1,0 +1,194 @@
+{
+  "ticker": "TSLA",
+  "name": "Tesla, Inc.",
+  "cik": "0001318605",
+  "sector": "Automotive & Energy",
+  "exchange": "Nasdaq",
+  "filing": {
+    "form": "DEF 14A",
+    "filingDate": "2026-10-19",
+    "accession": "0001104659-26-116700",
+    "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1318605/000110465926116700/tm267596-1_def14a.htm",
+    "indexUrl": "https://www.sec.gov/Archives/edgar/data/1318605/000110465926116700/0001104659-26-116700-index.htm"
+  },
+  "meeting": {
+    "year": 2026,
+    "date": "2026-12-03",
+    "fiscalYear": 2025
+  },
+  "generatedBy": "scripts/fetch-proxies.mjs",
+  "items": [
+    {
+      "id": "dir-elon-musk",
+      "type": "director",
+      "title": "Elect Elon Musk",
+      "subtitle": "Chief Executive Officer",
+      "boardRec": "FOR",
+      "facts": {
+        "name": "Elon Musk",
+        "age": 55,
+        "directorSince": 2004,
+        "tenureYears": 22,
+        "committees": [],
+        "isCeo": true,
+        "isChair": false,
+        "independent": false,
+        "combinedChairCeo": false,
+        "otherPublicBoards": null,
+        "classifiedBoard": true,
+        "termExpires": "2026",
+        "attendanceAtLeast75": true
+      },
+      "evidence": [
+        {
+          "label": "Board structure",
+          "quote": "divided into three classes with staggered three-year terms",
+          "truncated": false
+        },
+        {
+          "label": "Independence determination",
+          "quote": "other than Mr. Musk, who is our Chief Executive Officer, and Mr. Kimbal Musk",
+          "truncated": false
+        }
+      ]
+    },
+    {
+      "id": "dir-robyn-denholm",
+      "type": "director",
+      "title": "Elect Robyn Denholm",
+      "subtitle": "Independent Chair of the Board",
+      "boardRec": "FOR",
+      "facts": {
+        "name": "Robyn Denholm",
+        "age": 63,
+        "directorSince": 2014,
+        "tenureYears": 12,
+        "committees": [
+          "Audit (Chair)",
+          "Compensation",
+          "Nominating and Corporate Governance",
+          "Disclosure Controls (Chair)"
+        ],
+        "isCeo": false,
+        "isChair": true,
+        "independent": true,
+        "combinedChairCeo": false,
+        "otherPublicBoards": null,
+        "classifiedBoard": true,
+        "termExpires": "2026",
+        "attendanceAtLeast75": true
+      },
+      "evidence": [
+        {
+          "label": "Board structure",
+          "quote": "divided into three classes with staggered three-year terms",
+          "truncated": false
+        },
+        {
+          "label": "Independence determination",
+          "quote": "other than Mr. Musk, who is our Chief Executive Officer, and Mr. Kimbal Musk",
+          "truncated": false
+        }
+      ]
+    },
+    {
+      "id": "dir-jb-straubel",
+      "type": "director",
+      "title": "Elect JB Straubel",
+      "subtitle": "Director",
+      "boardRec": "FOR",
+      "facts": {
+        "name": "JB Straubel",
+        "age": 50,
+        "directorSince": 2023,
+        "tenureYears": 3,
+        "committees": [],
+        "isCeo": false,
+        "isChair": false,
+        "independent": true,
+        "combinedChairCeo": false,
+        "otherPublicBoards": null,
+        "classifiedBoard": true,
+        "termExpires": "2026",
+        "attendanceAtLeast75": true
+      },
+      "evidence": [
+        {
+          "label": "Board structure",
+          "quote": "divided into three classes with staggered three-year terms",
+          "truncated": false
+        },
+        {
+          "label": "Independence determination",
+          "quote": "other than Mr. Musk, who is our Chief Executive Officer, and Mr. Kimbal Musk",
+          "truncated": false
+        }
+      ]
+    },
+    {
+      "id": "say-on-pay",
+      "type": "say-on-pay",
+      "title": "Advisory vote to approve 2025 executive compensation",
+      "subtitle": "Say-on-pay (non-binding)",
+      "boardRec": "FOR",
+      "facts": {
+        "ceoName": "Elon Musk",
+        "ceoPayLatest": 158359009867,
+        "ceoPayPrior": null,
+        "ceoPayGrowthPct": null,
+        "ceoCapLatestUsdM": 10370,
+        "tsrIndexLatest": 191,
+        "tsrIndexPrior": 172,
+        "tsrOneYearPct": 11,
+        "priorYearSupportPct": 78.2,
+        "fiscalYear": 2025
+      },
+      "evidence": [
+        {
+          "label": "Summary Compensation Table (CEO rows)",
+          "quote": "Chief Executive Officer 2025 | - | - | 158,359,009,867 (3) | - | - | - | 158,359,009,867 2024 | - | - | - |",
+          "truncated": false
+        },
+        {
+          "label": "2025 say-on-pay result",
+          "quote": "approximately 78.2% of our shareholders present or represented by proxy and entitled to vote on the proposal at the meeting voting in favor",
+          "truncated": false
+        },
+        {
+          "label": "CEO pay structure",
+          "quote": "Mr. Musk received no compensation in 2025 other than the 2025 CEO Interim Award (as defined and discussed below), which was forfeited in its entirety in 2026, and the 2025 CEO Performance Award.",
+          "truncated": false
+        }
+      ]
+    },
+    {
+      "id": "auditor",
+      "type": "auditor",
+      "title": "Ratify PricewaterhouseCoopers LLP as auditor for FY2026",
+      "subtitle": "Auditor ratification",
+      "boardRec": "FOR",
+      "facts": {
+        "firm": "PricewaterhouseCoopers LLP",
+        "auditorSince": 2005,
+        "tenureYears": 21,
+        "auditFees": 16485,
+        "auditRelatedFees": 79,
+        "taxFees": 1401,
+        "otherFees": 105,
+        "totalFees": 18070,
+        "nonAuditSharePct": 8.3,
+        "feeUnit": "USD thousands",
+        "feeYear": 2025
+      },
+      "evidence": [
+        {
+          "label": "Auditor tenure",
+          "quote": "PricewaterhouseCoopers LLP has audited Tesla's financial statements since 2005.",
+          "truncated": false
+        }
+      ]
+    }
+  ],
+  "fetchedAt": "2026-11-17T00:57:33Z",
+  "fetchedAtNote": "Recorded from the committed snapshot file timestamp (scripts/fetch-proxies.mjs run); not re-fetched at seed time."
+}
